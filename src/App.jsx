@@ -24,7 +24,7 @@ import Author from "./assets/pages/Author";
 import About from "./assets/pages/Friction";
 import Friction2 from "./assets/pages/fripage2"; 
 import Friction3 from "./assets/pages/fripage3";
-import Combo from "./assets/pages/combo";
+import Combo from "./assets/pages/Combo";
 import Non from "./assets/pages/nonfriction";
 import Error from "./assets/pages/Error";
 import SignIn from "./assets/pages/signin";
