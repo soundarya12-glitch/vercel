@@ -5,6 +5,7 @@ import {
   FaThumbsDown, FaCommentAlt, FaQuoteRight, FaPen, FaUserCircle
 } from 'react-icons/fa';
 import { useState } from 'react';
+import React from 'react';
 
 export default function Friction() {
   const [open, setOpen] = useState(false);
