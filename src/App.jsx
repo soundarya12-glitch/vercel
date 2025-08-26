@@ -11,7 +11,7 @@ import SuperNavbar from "./components/Newslettertopnavbar";
 import Aboutus from "./assets/pages/Aboutus";
 import TrackUs from "./assets/pages/trackus";
 import Faq from "./assets/pages/faq";
-import Caone from "./assets/pages/caone";
+import Caone from "./assets/pages/Caone";
 import Readbook from "./assets/pages/readbooks";
 import Catwo from "./assets/pages/catwo";
 import Cathree from "./assets/pages/cathree";
