@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import ImageCarousel from './components/ImageCarousel';
 
 // Pages
-import Newsletter from "./assets/pages/newsletters";
+import SuperNavbar from "./components/Newslettertopnavbar";
 import Aboutus from "./assets/pages/Aboutus";
 import TrackUs from "./assets/pages/trackus";
 import Faq from "./assets/pages/faq";
@@ -68,7 +68,7 @@ function Layout() {
         <Route path="/caone" element={<Caone />} />
         <Route path="/catwo" element={<Catwo />} />
         <Route path="/cathree" element={<Cathree />} />
-        <Route path="/newsletters" element={<Newsletter />} />
+        <Route path="/newsletters" element={<SuperNavbar />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/quizes" element={<Books />} />
         <Route path="/geo" element={<Geography />} />
