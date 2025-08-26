@@ -65,7 +65,7 @@ function App() {
         <Route path="/Friction" element={<Friction />} />
         <Route path="/friction2" element={<FriPage2 />} />
         <Route path="/friction3" element={<FriPage3 />} />
-        <Route path="/combo" element={<Combo />} />
+        <Route path="/Combo" element={<Combo />} />
         <Route path="/non" element={<NonFriction />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
