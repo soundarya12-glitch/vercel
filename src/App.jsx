@@ -11,7 +11,7 @@ import SuperNavbar from "./components/Newslettertopnavbar";
 import Aboutus from "./assets/pages/Aboutus";
 import TrackUs from "./assets/pages/trackus";
 import Faq from "./assets/pages/faq";
-import Caone from "./assets/pages/Caone";
+import SimpleLayout from "./assets/pages/caone";
 import Readbook from "./assets/pages/readbooks";
 import Catwo from "./assets/pages/catwo";
 import Cathree from "./assets/pages/cathree";
@@ -65,7 +65,7 @@ function Layout() {
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/trackus" element={<TrackUs />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/caone" element={<Caone />} />
+        <Route path="/Caone" element={<SimpleLayout />} />
         <Route path="/catwo" element={<Catwo />} />
         <Route path="/cathree" element={<Cathree />} />
         <Route path="/newsletters" element={<SuperNavbar />} />
