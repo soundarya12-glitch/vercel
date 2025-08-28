@@ -12,7 +12,7 @@ export default function Friction() {
   const navigate = useNavigate();
 
   const books = [
-    { title: 'The Midnight Library', image: '/midnight.jpg', link: '/Caone', rating: 4, Author: "Author-name kilopara", button: 'BUY NOW' },
+    { title: 'The Midnight Library', image: '/midnight.jpg', link: '/caone', rating: 4, Author: "Author-name kilopara", button: 'BUY NOW' },
     { title: 'Where the Crawdads Sing', image: '/sing.jpg', link: '/cart', Author: "Author-name kilopara", rating: 5, button: 'BUY NOW' },
     { title: 'It Ends With Us', image: '/end.jpg', link: '/cart', Author: "Author-name kilopara", button: 'BUY NOW', rating: 4 },
     { title: 'The Book Thief', image: '/thief.jpg', link: '/cart', Author: "Author-name kilopara", button: 'BUY NOW', rating: 5 },

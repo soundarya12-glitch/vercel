@@ -11,7 +11,7 @@ import SuperNavbar from "./components/Newslettertopnavbar";
 import Aboutus from "./assets/pages/Aboutus";
 import TrackUs from "./assets/pages/trackus";
 import Faq from "./assets/pages/faq";
-import SimpleLayout from "./assets/pages/caone";
+
 import Readbook from "./assets/pages/readbooks";
 import Catwo from "./assets/pages/catwo";
 import Cathree from "./assets/pages/cathree";
@@ -35,7 +35,7 @@ import Box from "./assets/pages/boxes";
 import Quiz from "./assets/pages/Quiz";
 import Books from "./assets/pages/Quizes";
 import Geography from "./assets/Geo";
-
+import SimpleLayout from "./assets/pages/caone";
 function Layout() {
   const location = useLocation();
 
