@@ -1,49 +1,39 @@
-import React, { useState } from "react";
+// src/components/SuperNavbar.jsx
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import React from 'react'
 
-function Newsletter() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!email) return alert("Please enter your email");
-    setSubmitted(true);
-    setEmail("");
-  };
-
+export default function SuperNavbar() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-      <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md text-center">
-        <h2 className="text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
-        <p className="text-gray-600 mb-6">
-          Get the latest updates delivered straight to your inbox.
-        </p>
+    <div className="hidden lg:block bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 sm:px-6 py-2 text-sm shadow-md">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
+        
+        {/* Left: Social Media Icons */}
+        <div className="flex space-x-4 items-center">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+            <FaFacebookF className="w-5 h-5 sm:w-6 sm:h-6" />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+            <FaTwitter className="w-5 h-5 sm:w-6 sm:h-6" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
+            <FaInstagram className="w-5 h-5 sm:w-6 sm:h-6" />
+          </a>
+        </div>
 
-        {!submitted ? (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition"
-            >
-              Subscribe
-            </button>
-          </form>
-        ) : (
-          <p className="text-green-600 font-semibold">
-            🎉 Thanks for subscribing!
-          </p>
-        )}
+        {/* Center: Newsletter Text */}
+         <Link to="/newsletters" className="text-center text-xs sm:text-sm font-medium px-2 ">
+          📬 Subscribe to our newsletter for updates and offers!
+          </Link>
+       
+
+        {/* Right: Navigation Links */}
+        <div className="flex space-x-3 text-xs sm:text-sm font-medium">
+          <Link to="/Aboutus" className="hover:text-yellow-300 hover:underline">About Us</Link>
+          <Link to="/trackus" className="hover:text-yellow-300 hover:underline">Track Us</Link>
+          <Link to="/faq" className="hover:text-yellow-300 hover:underline">FAQ</Link>
+        </div>
       </div>
     </div>
   );
 }
-
-export default Newsletter;
