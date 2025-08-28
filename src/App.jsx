@@ -21,7 +21,7 @@ import Home from "./assets/pages/Categories";
 import Full from "./assets/pages/fullimage";
 import Scroll from "./assets/pages/scroll";
 import Author from "./assets/pages/Author";
-import About from "./assets/pages/Friction";
+import Friction from "./assets/pages/Friction";
 import Friction2 from "./assets/pages/fripage2"; 
 import Friction3 from "./assets/pages/fripage3";
 import Combo from "./assets/pages/Combo";
@@ -72,7 +72,7 @@ function Layout() {
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/quizes" element={<Books />} />
         <Route path="/geo" element={<Geography />} />
-        <Route path="/friction" element={<About />} />
+        <Route path="/friction" element={<Friction />} />
         <Route path="/fripage2" element={<Friction2 />} />
         <Route path="/fripage3" element={<Friction3 />} />
         <Route path="/combo" element={<Combo />} />
