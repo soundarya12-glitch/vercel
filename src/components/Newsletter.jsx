@@ -1,10 +1,7 @@
-// src/components/SuperNavbar.jsx
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import React from 'react'
-
-export default function SuperNavbar() {
-  return (
+export function Newsletter() {
+return (
     <div className="hidden lg:block bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 sm:px-6 py-2 text-sm shadow-md">
       <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
         
@@ -22,7 +19,7 @@ export default function SuperNavbar() {
         </div>
 
         {/* Center: Newsletter Text */}
-         <Link to="/newsletters" className="text-center text-xs sm:text-sm font-medium px-2 ">
+         <Link to="/subscription" className="text-center text-xs sm:text-sm font-medium px-2 ">
           📬 Subscribe to our newsletter for updates and offers!
           </Link>
        
@@ -37,3 +34,4 @@ export default function SuperNavbar() {
     </div>
   );
 }
+
