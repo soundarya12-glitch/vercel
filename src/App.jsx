@@ -74,7 +74,7 @@ function Layout() {
       <Routes>
   
         <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/trackus" element={<TrackUs />} />
+        <Route path="/Trackus" element={<TrackUs />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/caone" element={<SimpleLayout />} />
         <Route path="/catwo" element={<Catwo />} />
