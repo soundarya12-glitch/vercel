@@ -55,6 +55,7 @@ function Layout() {
           <Full />
           <Second />
           <Box />
+             <Second />
           <Authors />
           <Authorss />
         </>
