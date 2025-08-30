@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Newsletter } from "./components/Newsletter";
-import TopNavbar from "./components/TopNavbar";
+import TopNavbar from "./components/Topnavbar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ImageCarousel from "./components/ImageCarousel";
@@ -29,8 +29,9 @@ import Error from "./assets/pages/Error";
 import SignIn from "./assets/pages/Signin";
 import Reg from "./assets/pages/Reg";
 import Cart from "./assets/pages/Cart";
-import Second from "./assets/pages/Secondfullimage";
+
 import Box from "./assets/pages/Boxes";
+import Second from "./assets/pages/Secondfullimage";
 import Quiz from "./assets/pages/Quiz";
 import Books from "./assets/pages/Quizes";
 import Geography from "./assets/Geo";
@@ -53,17 +54,18 @@ function Layout() {
           <Home />
           <Scroll />
           <Full />
-          <Second />
+      
           <Box />
-             <Second />
+          <Second/>
           <Authors />
           <Authorss />
+         
         </>
       )}
 
       {/* ✅ Routes */}
       <Routes>
-        <Route path="/" element={<Home />} />
+   
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/trackus" element={<TrackUs />} />
         <Route path="/faq" element={<Faq />} />
