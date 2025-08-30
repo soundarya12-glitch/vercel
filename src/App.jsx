@@ -36,6 +36,9 @@ import Quiz from "./assets/pages/Quiz";
 import Books from "./assets/pages/Quizes";
 import Geography from "./assets/Geo";
 import SimpleLayout from "./assets/pages/Caone";
+import TwoImagesSection from "./assets/pages/Images";
+import Imagesection from "./assets/pages/Imagesss";
+import Imagesections from "./assets/pages/oneimage";
 
 function Layout() {
   const location = useLocation();
@@ -58,14 +61,18 @@ function Layout() {
           <Box />
           <Second/>
           <Authors />
-          <Authorss />
+          <Authors />
+          <TwoImagesSection/>
+          <Author/>
+          <Imagesection/>
+          <Imagesections/>
          
         </>
       )}
 
       {/* ✅ Routes */}
       <Routes>
-   
+  
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/trackus" element={<TrackUs />} />
         <Route path="/faq" element={<Faq />} />
@@ -85,7 +92,7 @@ function Layout() {
         <Route path="/cart" element={<Cart />} />
         
         <Route path="/subscription" element={<Sub/>} />
-        <Route path="*" element={<Error />} />
+       
       </Routes>
 
       {/* ✅ Readbook only for category pages */}
