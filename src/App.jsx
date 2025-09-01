@@ -8,7 +8,7 @@ import Sub from "./components/subscription";
 
 // Pages
 import Aboutus from "./assets/pages/Aboutus";
-import TrackUs from "./assets/pages/Trackus";
+
 import Faq from "./assets/pages/Faq";
 
 import Readbook from "./assets/pages/Readbooks";
@@ -74,7 +74,7 @@ function Layout() {
       <Routes>
   
         <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/Trackus" element={<TrackUs />} />
+    
         <Route path="/faq" element={<Faq />} />
         <Route path="/caone" element={<SimpleLayout />} />
         <Route path="/catwo" element={<Catwo />} />
