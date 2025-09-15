@@ -9,7 +9,7 @@ import Sub from "./components/subscription";
 // Pages
 import Aboutus from "./assets/pages/Aboutus";
 
-import Faq from "./assets/pages/Faq";
+
 
 import Readbook from "./assets/pages/Readbooks";
 import Catwo from "./assets/pages/Catwo";
