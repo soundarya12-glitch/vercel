@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from 'react'
 
-export default function FullWidthImage() {
+export default function Full() {
   return (
             <div className="pointer-events-auto cursor-pointer">
           <Link to="/cathree" className="block">
