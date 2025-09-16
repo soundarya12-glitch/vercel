@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram ,FaLinkedinIn} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 export function Newsletter() {
 return (
@@ -15,6 +15,10 @@ return (
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
             <FaInstagram className="w-5 h-5 sm:w-6 sm:h-6" />
+          </a>
+          
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+            <FaLinkedinIn className="w-5 h-5 sm:w-6 sm:h-6" />
           </a>
         </div>
 
