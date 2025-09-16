@@ -8,7 +8,8 @@ import Sub from "./components/subscription";
 
 // Pages
 import Aboutus from "./assets/pages/Aboutus";
-import TrackUs from "./assets/pages/Trackus";
+
+import TrackUs from "./assets/pages/Track";
 import Faq from "./assets/pages/Faq";
 
 import Readbook from "./assets/pages/Readbooks";
