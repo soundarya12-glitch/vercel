@@ -15,7 +15,6 @@ import Faq from "./assets/pages/Fre";
 import Readbook from "./assets/pages/Read";
 
 
-import Cathree from "./assets/pages/Cathree";
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
