@@ -13,7 +13,8 @@ import TrackUs from "./assets/pages/Track";
 import Faq from "./assets/pages/Fre";
 
 import Readbook from "./assets/pages/Read";
-import Catwo from "./assets/pages/Catwo";
+
+
 import Cathree from "./assets/pages/Cathree";
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
