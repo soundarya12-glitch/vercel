@@ -15,7 +15,7 @@ const faqs = [
   },
 ];
 
-export default function Faq() {
+export default function Fre() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
