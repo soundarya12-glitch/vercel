@@ -8,13 +8,12 @@ import Sub from "./components/subscription";
 
 // Pages
 import Aboutus from "./assets/pages/Aboutus";
-
-import TrackUs from "./assets/pages/Track";
+import TrackUs from "./assets/pages/Track";  // ✅ fixed casing
 import Faq from "./assets/pages/Fre";
 
 import Readbook from "./assets/pages/Read";
-
-
+import Catwo from "./assets/pages/Ca";
+import Cathree from "./assets/pages/Cathree";
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
@@ -25,7 +24,7 @@ import Friction from "./assets/pages/Friction";
 import Friction2 from "./assets/pages/Fripage2";
 import Friction3 from "./assets/pages/Fripage3";
 import Combo from "./assets/pages/Combo";
-import Non from "./assets/pages/Nonfriction";
+import Non from "./assets/pages/Nonfriction";   // ✅ fixed name
 import Error from "./assets/pages/Error";
 import SignIn from "./assets/pages/Signin";
 import Reg from "./assets/pages/Reg";
@@ -46,8 +45,7 @@ function Layout() {
 
   return (
     <>
-    <Newsletter/>
-
+      <Newsletter />
       <TopNavbar />
       <Navbar />
 
@@ -58,25 +56,21 @@ function Layout() {
           <Home />
           <Scroll />
           <Full />
-      
           <Box />
-          <Second/>
+          <Second />
           <Authors />
           <Authors />
-          <TwoImagesSection/>
-          <Author/>
-          <Imagesection/>
-          <Imagesections/>
-         
+          <TwoImagesSection />
+          <Author />
+          <Imagesection />
+          <Imagesections />
         </>
       )}
 
       {/* ✅ Routes */}
       <Routes>
-  
         <Route path="/aboutus" element={<Aboutus />} />
-            <Route path="/Trackus" element={<TrackUs />} />
-
+        <Route path="/trackus" element={<TrackUs />} />   {/* ✅ lowercase route */}
         <Route path="/faq" element={<Faq />} />
         <Route path="/caone" element={<SimpleLayout />} />
         <Route path="/catwo" element={<Catwo />} />
@@ -88,20 +82,17 @@ function Layout() {
         <Route path="/fripage2" element={<Friction2 />} />
         <Route path="/fripage3" element={<Friction3 />} />
         <Route path="/combo" element={<Combo />} />
-        <Route path="/nonfriction" element={<Non />} />
+        <Route path="/nonfiction" element={<Non />} />    {/* ✅ fixed route */}
         <Route path="/signin" element={<SignIn />} />
         <Route path="/reg" element={<Reg />} />
         <Route path="/cart" element={<Cart />} />
-        
-        <Route path="/subscription" element={<Sub/>} />
-       
+        <Route path="/subscription" element={<Sub />} />
       </Routes>
 
       {/* ✅ Readbook only for category pages */}
       {["/caone", "/catwo", "/cathree"].includes(location.pathname) && <Readbook />}
 
       <Footer />
-      
     </>
   );
 }

@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fa';
 import { useState } from 'react';
 
-export default function Friction() {
+export default function Non() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
