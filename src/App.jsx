@@ -13,13 +13,11 @@ import Faq from "./assets/pages/Fre";
 
 import Readbook from "./assets/pages/Read";
 import Catwo from "./assets/pages/Ca";
-
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
 
 
-import Scroll from "./assets/pages/Scroll";
 import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
 import Friction2 from "./assets/pages/Fripage2";
