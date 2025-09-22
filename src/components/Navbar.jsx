@@ -90,7 +90,7 @@ export default function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/Acdemic"
+        to="/Academic"
         className={({ isActive }) =>
           `px-3 py-2 rounded whitespace-nowrap ${
             isActive ? "bg-blue-200 text-blue-800 font-semibold" : "hover:bg-blue-100"
@@ -101,7 +101,7 @@ export default function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/Spirtual"
+        to="/Spiritual"
         className={({ isActive }) =>
           `px-3 py-2 rounded whitespace-nowrap ${
             isActive ? "bg-blue-200 text-blue-800 font-semibold" : "hover:bg-blue-100"

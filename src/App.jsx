@@ -14,7 +14,7 @@ import TrackUs from "./assets/pages/Track.jsx";
 import Faq from "./assets/pages/Fre.jsx";
 import Readbook from "./assets/pages/Read.jsx";
 import Catwo from "./assets/pages/Ca.jsx";
-import Cathree from "./assets/pages/Cathree.jsx";
+import Cathree from "./assets/pages/categthree.jsx";
 import Authors from "./assets/pages/Authors.jsx";
 import Authorss from "./assets/pages/Authorss.jsx";
 import Home from "./assets/pages/Categories.jsx";
