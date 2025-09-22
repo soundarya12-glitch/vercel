@@ -1,55 +1,56 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-
-// Components
-import { Newsletter } from "./components/Newsletter.jsx";
-import TopNavbar from "./components/Topnavbar.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
-import ImageCarousel from "./components/ImageCarousel.jsx";
-import Sub from "./components/subscription.jsx";
+import { Newsletter } from "./components/Newsletter";
+import TopNavbar from "./components/Topnavbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ImageCarousel from "./components/ImageCarousel";
+import Sub from "./components/subscription";
 
 // Pages
-import Aboutus from "./assets/pages/Aboutus.jsx";
-import TrackUs from "./assets/pages/Track.jsx";
-import Faq from "./assets/pages/Fre.jsx";
-import Readbook from "./assets/pages/Read.jsx";
-import Catwo from "./assets/pages/Ca.jsx";
-import Cathree from "./assets/pages/Cathree.jsx";
-import Authors from "./assets/pages/Authors.jsx";
-import Authorss from "./assets/pages/Authorss.jsx";
-import Home from "./assets/pages/Categories.jsx";
-import Full from "./assets/pages/Fullimage.jsx";
-import Scroll from "./assets/pages/Scroll.jsx";
-import Author from "./assets/pages/Author.jsx";
-import Friction from "./assets/pages/Friction.jsx";
-import Friction2 from "./assets/pages/Fripage2.jsx";
-import Friction3 from "./assets/pages/Fripage3.jsx";
-import Combo from "./assets/pages/Combo.jsx";
-import Non from "./assets/pages/Nonfriction.jsx";
-import Academic from "./assets/pages/Academic.jsx";
-import Error from "./assets/pages/Error.jsx";
-import SignIn from "./assets/pages/Signin.jsx";
-import Reg from "./assets/pages/Reg.jsx";
-import Cart from "./assets/pages/Cart.jsx";
-import ClientImagesCenter from "./assets/pages/clientscroll.jsx";
-import Dashboard from "./assets/pages/Dashboard.jsx";
-import FourBoxes from "./assets/pages/boxes.jsx";
-import Second from "./assets/pages/Secondfullimage.jsx";
-import Quiz from "./assets/pages/Quiz.jsx";
-import Books from "./assets/pages/Quizes.jsx";
-import Geography from "./assets/Geo.jsx";
-import SimpleLayout from "./assets/pages/Caone.jsx";
-import TwoImagesSection from "./assets/pages/Images.jsx";
-import Imagesection from "./assets/pages/Imagesss.jsx";
-import Imagesections from "./assets/pages/oneimage.jsx";
-import Orders from "./assets/pages/Orders.jsx";
-import Wishlist from "./assets/pages/Wishlist.jsx";
-import Profile from "./assets/pages/Profile.jsx";
-import Spiritual from "./assets/pages/Spiritual.jsx";
-import Blog from "./assets/pages/Blog.jsx";
-import Bookmarks from "./assets/pages/Bookmarks.jsx";
-import BlogDetail from "./assets/pages/Blogdetails.jsx";
-import Settings from "./assets/pages/Settings.jsx";
+import Aboutus from "./assets/pages/Aboutus";
+import TrackUs from "./assets/pages/Track";  // ✅ fixed casing
+import Faq from "./assets/pages/Fre";
+
+import Readbook from "./assets/pages/Read";
+import Catwo from "./assets/pages/Ca";
+
+import Authors from "./assets/pages/Authors";
+import Authorss from "./assets/pages/Authorss";
+import Home from "./assets/pages/Categories";
+
+
+import Author from "./assets/pages/Author";
+import Friction from "./assets/pages/Friction";
+
+import Combo from "./assets/pages/Combo";
+import Non from "./assets/pages/Nonfriction";
+
+
+import Academic from "./assets/pages/Academic";
+// ✅ fixed name
+import Error from "./assets/pages/Error";
+import SignIn from "./assets/pages/Signin";
+import Reg from "./assets/pages/Reg";
+import Cart from "./assets/pages/Cart";
+import ClientImagesCenter from "./assets/pages/clientscroll";
+import Dashboard from "./assets/pages/Dashboard";
+import FourBoxes from "./assets/pages/boxes";
+import Second from "./assets/pages/Secondfullimage";
+import Quiz from "./assets/pages/Quiz";
+import Books from "./assets/pages/Quizes";
+import Geography from "./assets/Geo";
+import SimpleLayout from "./assets/pages/Caone";
+import TwoImagesSection from "./assets/pages/Images";
+import Imagesection from "./assets/pages/Imagesss";
+import Imagesections from "./assets/pages/oneimage";
+import Orders from "./assets/pages/Orders";
+import Wishlist from "./assets/pages/Wishlist";
+import Profile from "./assets/pages/Profile";
+import Spiritual from "./assets/pages/Spiritual";
+import Blog from "./assets/pages/Blog";
+import Bookmarks from "./assets/pages/Bookmarks";
+import BlogDetail from "./assets/pages/Blogdetails";
+import Settings from "./assets/pages/Settings";
 
 function Layout() {
   const location = useLocation();
@@ -60,7 +61,7 @@ function Layout() {
       <TopNavbar />
       <Navbar />
 
-      {/* Home page */}
+      {/* ✅ Home page */}
       {location.pathname === "/" && (
         <>
           <ImageCarousel />
@@ -70,7 +71,7 @@ function Layout() {
           <FourBoxes />
           <Second />
           <Authors />
-          <ClientImagesCenter />
+            <ClientImagesCenter/>
           <Authors />
           <TwoImagesSection />
           <Author />
@@ -79,10 +80,10 @@ function Layout() {
         </>
       )}
 
-      {/* Routes */}
+      {/* ✅ Routes */}
       <Routes>
         <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/trackus" element={<TrackUs />} />
+        <Route path="/trackus" element={<TrackUs />} />   {/* ✅ lowercase route */}
         <Route path="/faq" element={<Faq />} />
         <Route path="/caone" element={<SimpleLayout />} />
         <Route path="/catwo" element={<Catwo />} />
@@ -94,24 +95,28 @@ function Layout() {
         <Route path="/fripage2" element={<Friction2 />} />
         <Route path="/fripage3" element={<Friction3 />} />
         <Route path="/combo" element={<Combo />} />
-        <Route path="/nonfriction" element={<Non />} />
-        <Route path="/academic" element={<Academic />} />
-        <Route path="/spiritual" element={<Spiritual />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/Nonfriction" element={<Non />} /> 
+            <Route path="/Academic" element={<Academic/>} /> 
+              {/* ✅ fixed route */}
+               <Route path="/Spiritual" element={<Spiritual/>} /> 
+                       <Route path="/Blog" element={<Blog/>} /> 
+              {/* ✅ fixed route */}
         <Route path="/signin" element={<SignIn />} />
         <Route path="/reg" element={<Reg />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/subscription" element={<Sub />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/bookmarks" element={<Bookmarks />} />
-        <Route path="/blogdetails" element={<BlogDetail />} />
-        <Route path="/settings" element={<Settings />} />
+               <Route path="/Dashboard" element={<Dashboard />} />
+                     <Route path="/Orders" element={<Orders/>} />
+                      <Route path="/Wishlist" element={<Wishlist/>} />
+                           <Route path="/Profile" element={<Profile/>} />
+                              <Route path="/Bookmarks" element={<Bookmarks/>} />
+                                  <Route path="/Blogdetails" element={<BlogDetail/>} />
+                                  <Route path="/Settings" element={<Settings/>} />
+                         
+                         
       </Routes>
 
-      {/* Readbook only for category pages */}
+      {/* ✅ Readbook only for category pages */}
       {["/caone", "/catwo", "/cathree"].includes(location.pathname) && <Readbook />}
 
       <Footer />
