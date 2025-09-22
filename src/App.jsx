@@ -13,7 +13,7 @@ import Faq from "./assets/pages/Fre";
 
 import Readbook from "./assets/pages/Read";
 import Catwo from "./assets/pages/Ca";
-import Cathree from "./assets/pages/Cathree.jsx";
+
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
