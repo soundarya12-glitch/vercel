@@ -17,7 +17,7 @@ import Catwo from "./assets/pages/Ca";
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
-import Full from "./assets/pages/Fullimage.jsx";
+
 
 import Scroll from "./assets/pages/Scroll";
 import Author from "./assets/pages/Author";
