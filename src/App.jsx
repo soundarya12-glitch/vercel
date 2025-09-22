@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 // Components
-import { Newsletter } from "./components/Newsletter";
-import TopNavbar from "./components/Topnavbar";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ImageCarousel from "./components/ImageCarousel";
-import Sub from "./components/subscription";
+import { Newsletter } from "./components/Newsletter.jsx";
+import TopNavbar from "./components/Topnavbar.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import ImageCarousel from "./components/ImageCarousel.jsx";
+import Sub from "./components/subscription.jsx";
 
 // Pages
 import Aboutus from "./assets/pages/Aboutus.jsx";
@@ -14,7 +14,7 @@ import TrackUs from "./assets/pages/Track.jsx";
 import Faq from "./assets/pages/Fre.jsx";
 import Readbook from "./assets/pages/Read.jsx";
 import Catwo from "./assets/pages/Ca.jsx";
-
+import Cathree from "./assets/pages/Cathree.jsx";
 import Authors from "./assets/pages/Authors.jsx";
 import Authorss from "./assets/pages/Authorss.jsx";
 import Home from "./assets/pages/Categories.jsx";
