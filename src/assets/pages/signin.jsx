@@ -3,29 +3,23 @@ import { auth } from "../../firebase";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom"; 
 import { X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      setMessage("✅ Logged in successfully!");
+      // ✅ If login is successful, redirect to dashboard
+      navigate("/Dashboard");
     } catch (err) {
-      if (err.code === "auth/user-not-found") {
-        try {
-          await createUserWithEmailAndPassword(auth, email, password);
-          setMessage("✅ Account created & logged in!");
-        } catch (signupError) {
-          setMessage("⚠️ " + signupError.message);
-        }
-      } else {
-        setMessage("⚠️ " + err.message);
-      }
+      setError("Invalid email or password");
+      console.error(err);
     }
   };
 
@@ -46,6 +40,8 @@ export default function Signin() {
         <h2 className="text-center text-xl font-bold mb-4">Sign in</h2>
 
         <form onSubmit={handleLogin} className="space-y-4 flex flex-col gap-4">
+       
+
           <input
             type="email"
             placeholder="Email"
@@ -69,9 +65,17 @@ export default function Signin() {
           >
             Login 
           </button>
+         <center>
+  <Link to="/Reg">
+    <h1 className="text-blue-600 hover:underline cursor-pointer">
+      No account? Register here
+    </h1>
+  </Link>
+</center>
+          
         </form>
 
-        {message && <p className="mt-4 text-center text-red-500">{message}</p>}
+      
       </div>
     </div>
   );

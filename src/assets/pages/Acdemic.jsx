@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fa';
 import { useState } from 'react';
 
-export default function Non() {
+export default function Academic() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -30,7 +30,7 @@ export default function Non() {
     <div className="flex flex-col lg:flex-row min-h-screen">
       {/* Left Sidebar */}
       <aside className="w-full lg:w-64 bg-white p-4 shadow-md">
-        <h2 className="text-xl font-semibold mb-4">Non-Friction</h2>
+        <h2 className="text-xl font-semibold mb-4">Acdemic Books</h2>
         <div className="relative mb-5">
           <input
             type="text"

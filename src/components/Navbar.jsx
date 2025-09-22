@@ -57,7 +57,7 @@ export default function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/nonfriction"
+        to="/Nonfriction"
         className={({ isActive }) =>
           `px-3 py-2 rounded whitespace-nowrap ${
             isActive ? "bg-blue-200 text-blue-800 font-semibold" : "hover:bg-blue-100"
@@ -68,7 +68,7 @@ export default function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/blog"
+        to="/Blog"
         className={({ isActive }) =>
           `px-3 py-2 rounded ${
             isActive ? "bg-blue-200 text-blue-800 font-semibold" : "hover:bg-blue-100"
@@ -79,7 +79,7 @@ export default function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/bookmarks"
+        to="/Bookmarks"
         className={({ isActive }) =>
           `px-3 py-2 rounded ${
             isActive ? "bg-blue-200 text-blue-800 font-semibold" : "hover:bg-blue-100"
@@ -90,7 +90,7 @@ export default function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/contact"
+        to="/Acdemic"
         className={({ isActive }) =>
           `px-3 py-2 rounded whitespace-nowrap ${
             isActive ? "bg-blue-200 text-blue-800 font-semibold" : "hover:bg-blue-100"
@@ -101,7 +101,7 @@ export default function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/spiritual"
+        to="/Spirtual"
         className={({ isActive }) =>
           `px-3 py-2 rounded whitespace-nowrap ${
             isActive ? "bg-blue-200 text-blue-800 font-semibold" : "hover:bg-blue-100"

@@ -24,13 +24,18 @@ import Friction from "./assets/pages/Friction";
 import Friction2 from "./assets/pages/Fripage2";
 import Friction3 from "./assets/pages/Fripage3";
 import Combo from "./assets/pages/Combo";
-import Non from "./assets/pages/Nonfriction";   // ✅ fixed name
+import Non from "./assets/pages/Nonfriction";
+
+
+import Academic from "./assets/pages/acdemic";
+// ✅ fixed name
 import Error from "./assets/pages/Error";
 import SignIn from "./assets/pages/Signin";
 import Reg from "./assets/pages/Reg";
 import Cart from "./assets/pages/Cart";
-
-import Box from "./assets/pages/Boxes";
+import ClientImagesCenter from "./assets/pages/clientscroll";
+import Dashboard from "./assets/pages/Dashboard";
+import FourBoxes from "./assets/pages/boxes";
 import Second from "./assets/pages/Secondfullimage";
 import Quiz from "./assets/pages/Quiz";
 import Books from "./assets/pages/Quizes";
@@ -39,6 +44,14 @@ import SimpleLayout from "./assets/pages/Caone";
 import TwoImagesSection from "./assets/pages/Images";
 import Imagesection from "./assets/pages/Imagesss";
 import Imagesections from "./assets/pages/oneimage";
+import Orders from "./assets/pages/Orders";
+import Wishlist from "./assets/pages/Wishlist";
+import Profile from "./assets/pages/Profile";
+import Spiritual from "./assets/pages/Spirtual";
+import Blog from "./assets/pages/Blog";
+import Bookmarks from "./assets/pages/Bookmarks";
+import BlogDetail from "./assets/pages/Blogdetails";
+import Settings from "./assets/pages/Settings";
 
 function Layout() {
   const location = useLocation();
@@ -56,9 +69,10 @@ function Layout() {
           <Home />
           <Scroll />
           <Full />
-          <Box />
+          <FourBoxes />
           <Second />
           <Authors />
+            <ClientImagesCenter/>
           <Authors />
           <TwoImagesSection />
           <Author />
@@ -82,11 +96,25 @@ function Layout() {
         <Route path="/fripage2" element={<Friction2 />} />
         <Route path="/fripage3" element={<Friction3 />} />
         <Route path="/combo" element={<Combo />} />
-        <Route path="/nonfiction" element={<Non />} />    {/* ✅ fixed route */}
+        <Route path="/Nonfriction" element={<Non />} /> 
+            <Route path="/Acdemic" element={<Academic/>} /> 
+              {/* ✅ fixed route */}
+               <Route path="/Spirtual" element={<Spiritual/>} /> 
+                       <Route path="/Blog" element={<Blog/>} /> 
+              {/* ✅ fixed route */}
         <Route path="/signin" element={<SignIn />} />
         <Route path="/reg" element={<Reg />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/subscription" element={<Sub />} />
+               <Route path="/Dashboard" element={<Dashboard />} />
+                     <Route path="/Orders" element={<Orders/>} />
+                      <Route path="/Wishlist" element={<Wishlist/>} />
+                           <Route path="/Profile" element={<Profile/>} />
+                              <Route path="/Bookmarks" element={<Bookmarks/>} />
+                                  <Route path="/Blogdetails" element={<BlogDetail/>} />
+                                  <Route path="/Settings" element={<Settings/>} />
+                         
+                         
       </Routes>
 
       {/* ✅ Readbook only for category pages */}

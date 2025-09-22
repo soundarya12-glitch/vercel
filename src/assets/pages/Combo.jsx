@@ -30,7 +30,7 @@ export default function Friction() {
     <div className="flex flex-col lg:flex-row min-h-screen">
       {/* Left Sidebar */}
       <aside className="w-full lg:w-64 bg-white p-4 shadow-md">
-        <h2 className="text-xl font-semibold mb-4">Fiction</h2>
+        <h2 className="text-xl font-semibold mb-4">Combo </h2>
         <div className="relative mb-5">
           <input
             type="text"
@@ -100,7 +100,7 @@ export default function Friction() {
 
       {/* Main Content */}
       <main className="flex-1 p-4">
-        <h1 className="text-2xl font-bold mb-4">Products</h1>
+        <h1 className="text-2xl text-white font-bold mb-4">Products</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
           {books.map((book, index) => (
             <div key={index} className="bg-white rounded-xl shadow-md p-4 transition-transform transform hover:-translate-y-2">
