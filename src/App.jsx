@@ -13,15 +13,16 @@ import Faq from "./assets/pages/Fre";
 
 import Readbook from "./assets/pages/Read";
 import Catwo from "./assets/pages/Ca";
-
+import Cathree from "./assets/pages/Cathree";
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
-
-
+import Full  from "./assets/pages/Fullimage";
+import Scroll from "./assets/pages/Scroll";
 import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
-
+import Friction2 from "./assets/pages/Fripage2";
+import Friction3 from "./assets/pages/Fripage3";
 import Combo from "./assets/pages/Combo";
 import Non from "./assets/pages/Nonfriction";
 
