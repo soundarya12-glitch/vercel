@@ -24,7 +24,7 @@ import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
 
 import Combo from "./assets/pages/Combo";
-import Non from "./assets/pages/Nonfriction";
+
 
 
 import Academic from "./assets/pages/Academic";
