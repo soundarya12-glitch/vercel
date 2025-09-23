@@ -19,7 +19,7 @@ import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
 
 
-import Scroll from "./assets/pages/Scroll";
+
 import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
 import Friction2 from "./assets/pages/Fripage2";
