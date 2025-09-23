@@ -22,7 +22,7 @@ import Home from "./assets/pages/Categories";
 
 import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
-import Friction2 from "./assets/pages/Fripage2";
+
 import Friction3 from "./assets/pages/Fripage3";
 import Combo from "./assets/pages/Combo";
 import Non from "./assets/pages/Nonfriction";
@@ -94,7 +94,7 @@ function Layout() {
         <Route path="/quizes" element={<Books />} />
         <Route path="/geo" element={<Geography />} />
         <Route path="/friction" element={<Friction />} />
-        <Route path="/fripage2" element={<Friction2 />} />
+        <Route path="/fripage2" element={<Frictiontwo />} />
         <Route path="/fripage3" element={<Friction3 />} />
         <Route path="/combo" element={<Combo />} />
         <Route path="/Nonfriction" element={<Non />} /> 
