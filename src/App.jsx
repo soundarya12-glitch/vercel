@@ -18,6 +18,7 @@ import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
 import Full from "./assets/pages/FullImage";
+
 import Scroll from "./assets/pages/Scroll";
 import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
