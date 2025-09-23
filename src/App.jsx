@@ -23,7 +23,6 @@ import Home from "./assets/pages/Categories";
 import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
 
-import Friction3 from "./assets/pages/Fripage3";
 import Combo from "./assets/pages/Combo";
 import Non from "./assets/pages/Nonfriction";
 
