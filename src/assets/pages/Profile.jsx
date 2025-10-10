@@ -34,6 +34,12 @@ export default function Wishlist() {
           <Link to="/Orders" className="hover:bg-white/20 text-lg p-3 rounded-md">
             My Orders
           </Link>
+           <Link
+                                      to="/Cart"
+                                      className="hover:bg-white/20 text-lg p-3 rounded-md"
+                                    >
+                                      My Cart
+                                      </Link>
           <Link to="/Wishlist" className="hover:bg-white/20 text-lg p-3 rounded-md">
             Wishlist
           </Link>

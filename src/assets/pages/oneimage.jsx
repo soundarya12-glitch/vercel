@@ -4,7 +4,7 @@ function Imagesections() {
   return (
     
    <div className="relative">
-               <Link to="/cart.jsx">
+               <Link to="/Aboutus">
            <img
              src="/aboutt.jpg"   // 👈 Place this in public/
              alt="First"

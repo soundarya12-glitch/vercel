@@ -1,26 +1,41 @@
-// src/pages/Wishlist.jsx
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signOut } from "firebase/auth";
-import { auth } from "../../firebase";
 
-export default function Wishlist() {
+export default function Dashboard() {
   const navigate = useNavigate();
-
-  const handleLogout = async () => {
+  const [wishlist, setWishlist] = useState([]);
+  const [cart, setCart] = useState([]);
+const handleLogout = async () => {
     await signOut(auth);
     navigate("/");
   };
+  // Load wishlist and cart from localStorage
+  useEffect(() => {
+    const savedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    setWishlist(savedWishlist);
 
-  const wishlist = [
-    { id: 1, title: "Think Like a Monk", author: "Jay Shetty", price: "$15" },
-    { id: 2, title: "The Psychology of Money", author: "Morgan Housel", price: "$12" },
-    { id: 3, title: "Ikigai", author: "Héctor García", price: "$10" },
-        { id: 1, title: "Think Like a Monk", author: "Jay Shetty", price: "$15" },
-    { id: 2, title: "The Psychology of Money", author: "Morgan Housel", price: "$12" },
-    { id: 3, title: "Ikigai", author: "Héctor García", price: "$10" },
-  ];
+    const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    setCart(savedCart);
+  }, []);
 
+  // Remove from wishlist
+  const handleRemoveWishlist = (id) => {
+    const updated = wishlist.filter((item) => item.id !== id);
+    localStorage.setItem("wishlist", JSON.stringify(updated));
+    setWishlist(updated);
+  };
+
+  // Remove from cart
+  const handleRemoveCart = (id) => {
+    const updated = cart.filter((item) => item.id !== id);
+    localStorage.setItem("cart", JSON.stringify(updated));
+    setCart(updated);
+  };
+
+  // Checkout function
+  const handleCheckout = (item) => {
+    navigate("/checkout", { state: { item } });
+  };
 
   return (
     <div className="flex min-h-screen bg-gray-100">
@@ -28,22 +43,39 @@ export default function Wishlist() {
       <aside className="w-64 h-screen bg-gradient-to-b from-purple-600 via-pink-500 to-red-500 text-white flex flex-col">
         <div className="text-2xl font-bold p-6 text-center">📚 BookStore</div>
         <nav className="flex flex-col gap-4 p-4 text-center">
-          <Link to="/Dashboard" className="hover:bg-white/20 text-lg p-3 rounded-md">
+          <Link
+            to="/Dashboard"
+            className="hover:bg-white/20 text-lg p-3 rounded-md"
+          >
             Home
           </Link>
-          <Link to="/Orders" className="hover:bg-white/20 text-lg p-3 rounded-md">
+          <Link
+            to="/Orders"
+            className="hover:bg-white/20 text-lg p-3 rounded-md"
+          >
             My Orders
           </Link>
-          <Link to="/Wishlist" className="hover:bg-white/20 text-lg p-3 rounded-md">
+          <Link
+            to="/Cart"
+            className="hover:bg-white/20 text-lg p-3 rounded-md"
+          >
+            My Cart
+          </Link>
+          <Link
+            to="/Wishlist"
+            className="hover:bg-white/20 text-lg p-3 rounded-md"
+          >
             Wishlist
           </Link>
-          <Link to="/Profile" className="hover:bg-white/20 text-lg p-3 rounded-md">
+          <Link
+            to="/Profile"
+            className="hover:bg-white/20 text-lg p-3 rounded-md"
+          >
             Profile
           </Link>
-
-          <button
+  <button
             onClick={handleLogout}
-            className=" hover:bg-red-700 p-3 rounded-lg text-white"
+            className=" hover:bg-red-700 px-4 py-2 mt-4 rounded-lg text-white"
           >
             Logout
           </button>
@@ -51,31 +83,46 @@ export default function Wishlist() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-8">
-        <h2 className="text-3xl font-bold text-center mb-8">❤️ My Wishlist</h2>
+      <div className="p-6 flex-1">
+        <h1 className="text-3xl font-bold mb-6 text-center">MyWishlist</h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {wishlist.map((book) => (
-            <div
-              key={book.id}
-              className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300"
-            >
-              <h3 className="text-lg font-semibold">{book.title}</h3>
-              <p className="text-gray-600">by {book.author}</p>
-              <p className="text-gray-800 font-bold mt-2">{book.price}</p>
-
-              <div className="mt-4 flex gap-2">
-                <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
-                  Add to Cart
-                </button>
-                <button className="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded-lg">
-                  Remove
-                </button>
-              </div>
+        {/* Wishlist Section */}
+        <section className="mb-10">
+         
+          {wishlist.length === 0 ? (
+            <p>No books in wishlist yet.</p>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+              {wishlist.map((book) => (
+                <div
+                  key={book.id}
+                  className="bg-white p-4 rounded shadow flex flex-col items-center"
+                >
+                  <img
+                    src={book.img}
+                    alt={book.title}
+                    className="w-full h-48 object-cover mb-2"
+                  />
+                  <h2 className="font-bold">{book.title}</h2>
+                  <p className="text-green-600 font-semibold mb-2">
+                    ₹{book.price}
+                  </p>
+                  <button
+                    onClick={() => handleRemoveWishlist(book.id)}
+                    className="mt-2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+                  >
+                    Remove
+                  </button>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </main>
+          )}
+        </section>
+
+        {/* Cart Section */}
+       
+                    
+      </div>
     </div>
   );
 }

@@ -21,7 +21,7 @@ export default function Second() {
           <div className="pointer-events-auto cursor-pointer">
           <Link to="/caone" className="block">
             <img
-              src="c1.jpg"
+              src="c4.jpg"
               alt="Slide 1"
               className="w-full object-cover max-h-[500px] sm:max-h-[400px] md:max-h-[500px]"
             />
@@ -32,7 +32,7 @@ export default function Second() {
         <div className="pointer-events-auto cursor-pointer">
           <Link to="/catwo" className="block">
             <img
-              src="c2.jpg"
+              src="lens.jpg"
               alt="Slide 1"
               className="w-full object-cover max-h-[500px] sm:max-h-[400px] md:max-h-[500px]"
             />

@@ -5,7 +5,7 @@ function Imagesection() {
     <div className="grid md:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto">
       {/* Image 1 */}
       <div className="relative">
-            <Link to="/cart.jsx">
+            <Link to="/Blog">
         <img
           src="/blog.jpg"   // 👈 Place this in public/
           alt="First"
@@ -19,7 +19,7 @@ function Imagesection() {
 
       {/* Image 2 */}
       <div className="relative">
-           <Link to="/cart.jsx">
+           <Link to="/Testimonal">
         <img
           src="/test.jpg"   // 👈 Place this in public/
           alt="Second"
@@ -33,7 +33,7 @@ function Imagesection() {
 
       {/* Image 3 */}
       <div className="relative">
-                  <Link to="/cart.jsx">
+                  <Link to="/Aboutus">
         <img
           src="/about.jpg"   // 👈 Place this in public/
           alt="Third"

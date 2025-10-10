@@ -17,16 +17,15 @@ import Cathree from "./assets/pages/Cathree";
 import Authors from "./assets/pages/Authors";
 import Authorss from "./assets/pages/Authorss";
 import Home from "./assets/pages/Categories";
+import Full from "./assets/pages/FullImage";
 
-
-
+import Scroll from "./assets/pages/Scroll";
 import Author from "./assets/pages/Author";
 import Friction from "./assets/pages/Friction";
-
+import Friction2 from "./assets/pages/Fripage2";
+import Friction3 from "./assets/pages/Fripage3";
 import Combo from "./assets/pages/Combo";
-
-
-
+import Non from "./assets/pages/Nonfriction";
 import Academic from "./assets/pages/Academic";
 // ✅ fixed name
 import Error from "./assets/pages/Error";
@@ -52,7 +51,14 @@ import Blog from "./assets/pages/Blog";
 import Bookmarks from "./assets/pages/Bookmarks";
 import BlogDetail from "./assets/pages/Blogdetails";
 import Settings from "./assets/pages/Settings";
-
+import ProductCard from "./assets/pages/Checkout";
+import Checkouttwo from "./assets/pages/Checkouttwo";
+import Checkoutthree from "./assets/pages/Checkoutthree";
+import Frontwishlist from "./assets/pages/Frontwishlist";
+import Testimonials from "./assets/pages/Testimonal";
+import SocialSidebar from "./assets/pages/Socialsidebar";
+import PaymentPage from "./assets/pages/Paymentpage";
+import Thankyou from "./assets/pages/Thankyou";
 function Layout() {
   const location = useLocation();
 
@@ -67,17 +73,23 @@ function Layout() {
         <>
           <ImageCarousel />
           <Home />
-          <Scroll />
-          <Full />
-          <FourBoxes />
+          <Testimonials/>
+              <Full />
+  <Authors />
+       
           <Second />
-          <Authors />
-            <ClientImagesCenter/>
-          <Authors />
-          <TwoImagesSection />
-          <Author />
+     <TwoImagesSection />
+              <Author />
+       
+    
+   
+           
+     
+     
+     
           <Imagesection />
-          <Imagesections />
+       
+          <SocialSidebar/>
         </>
       )}
 
@@ -93,7 +105,7 @@ function Layout() {
         <Route path="/quizes" element={<Books />} />
         <Route path="/geo" element={<Geography />} />
         <Route path="/friction" element={<Friction />} />
-        <Route path="/fripage2" element={<Frictiontwo />} />
+        <Route path="/fripage2" element={<Friction2 />} />
         <Route path="/fripage3" element={<Friction3 />} />
         <Route path="/combo" element={<Combo />} />
         <Route path="/Nonfriction" element={<Non />} /> 
@@ -114,7 +126,14 @@ function Layout() {
                                   <Route path="/Blogdetails" element={<BlogDetail/>} />
                                   <Route path="/Settings" element={<Settings/>} />
                          
-                         
+                            <Route path="/Checkout" element={<ProductCard/>} />
+                                 
+                            <Route path="/Checkouttwo" element={<Checkouttwo/>} />
+                               <Route path="/Checkoutthree" element={<Checkoutthree/>} />
+                                    <Route path="/Frontwishlist" element={<Frontwishlist/>} />
+                                 
+                                       <Route path="/payment" element={<PaymentPage />} />
+                                                    <Route path="/Thankyou" element={<Thankyou/>} />
       </Routes>
 
       {/* ✅ Readbook only for category pages */}

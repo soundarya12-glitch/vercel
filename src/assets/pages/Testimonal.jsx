@@ -6,7 +6,7 @@ const testimonials = [
     name: "Adarsh Gupta",
     role: "Author",
     message: "This book completely changed my perspective on life. Highly recommended!",
-    img: "adarsh.jpg",
+    img: "ad.jpg",
   },
   {
     id: 2,
@@ -20,20 +20,20 @@ const testimonials = [
     name: "Shikha Mehra",
     role: "Blogger",
     message: "A must-read for anyone looking for personal growth.",
-    img: "shikha.jpg",
+    img: "shi.jpg",
   },
   {
     id: 4,
     name: "Dr Mickey Mehta",
     role: "Motivator",
     message: "Excellent book! It gives you clarity and purpose in life.",
-    img: "mickey.jpg",
+    img: "mi.jpg",
   },
 ];
 
 export default function TestimonialsScroll() {
   return (
-    <div className=" py-12">
+    <div className="bg-gray-100 py-12">
       <h2 className="text-3xl font-bold text-center mb-8">What Our Readers Say</h2>
 
       <div className="overflow-hidden relative">

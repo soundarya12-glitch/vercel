@@ -55,28 +55,10 @@ const buttonStyle ="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px
                <h6 className="text-sm text-purple-700 font-semibold mb-1">{img.Author}</h6>
               <p className="mt-2 text-sm font-semibold text-gray-700">{img.title}</p>
             </a>
-               <div className="flex items-center">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill={i < 5 ? "#facc15" : "#d1d5db"} // yellow-400 and gray-300
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.214 3.726a1 1 0 00.95.69h3.916c.969 0 1.371 1.24.588 1.81l-3.17 2.302a1 1 0 00-.364 1.118l1.214 3.726c.3.921-.755 1.688-1.54 1.118l-3.17-2.302a1 1 0 00-1.176 0l-3.17 2.302c-.784.57-1.838-.197-1.54-1.118l1.213-3.726a1 1 0 00-.364-1.118L2.38 9.153c-.783-.57-.38-1.81.588-1.81h3.916a1 1 0 00.95-.69l1.214-3.726z" />
-                  </svg>
-                ))}
-               
+              
               </div>
-              <button
-              className={buttonStyle}
-              onClick={() =>navigate(images.link)}
-            >
-              {img.button}
-            </button>
+              
           
-            </div>
         
         ))}
       </div>

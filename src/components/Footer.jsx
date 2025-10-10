@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-purple-700 via-pink-600 to-red-500 text-white pt-14 pb-9">
+    <footer className="bg-gradient-to-r from-amber-500 to-rose-500 text-white pt-14 pb-9">
+  
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-6 gap-8">
 
         {/* Newsletter */}

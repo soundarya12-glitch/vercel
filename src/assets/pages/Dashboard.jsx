@@ -39,7 +39,7 @@ export default function DashboardHome() {
       {/* Dashboard Content Area */}
       <div className="flex min-h-screen bg-gray-100">
             {/* Sidebar */}
-            <aside className="w-64  h-50 bg-gradient-to-b from-purple-600 via-pink-500 to-red-500 text-white flex flex-col">
+            <aside className="w-64  h-50 bg-gradient-to-b from-purple-600 via-pink-500 to-red-500 text-white flex flex-col  h-[790px]">
               <div className="text-2xl font-bold p-6 text-center">📚 BookStore</div>
               <nav className="flex flex-col gap-4 p-4 text-center">
                 <Link to="/dashboard" className="hover:bg-white/20 text-lg p-3 rounded-md">
@@ -48,6 +48,12 @@ export default function DashboardHome() {
                 <Link to="/Orders" className="hover:bg-white/20 text-lg p-3 rounded-md">
                   My Orders
                 </Link>
+                <Link
+                            to="/Cart"
+                            className="hover:bg-white/20 text-lg p-3 rounded-md"
+                          >
+                            My Cart
+                          </Link>
                 <Link to="/Wishlist" className="hover:bg-white/20 text-lg p-3 rounded-md">
                   Wishlist
                 </Link>
@@ -102,21 +108,8 @@ export default function DashboardHome() {
             ))}
           </div>
 
-          {/* Newsletter Section */}
-          <div className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white rounded-xl p-10 text-center shadow-lg">
-            <h3 className="text-2xl font-bold mb-4">Subscribe to our Newsletter</h3>
-            <p className="mb-6">Get the latest updates and book recommendations.</p>
-            <div className="flex justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 rounded-l-lg w-64 text-black"
-              />
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-2 rounded-r-lg">
-                Subscribe
-              </button>
-            </div>
-          </div>
+      
+          
         </main>
       </div>
 

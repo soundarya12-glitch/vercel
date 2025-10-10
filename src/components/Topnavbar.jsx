@@ -5,8 +5,10 @@ import {
   UserPlusIcon,
   MagnifyingGlassIcon,
   ShoppingCartIcon,
+  HeartIcon
 
 } from '@heroicons/react/24/outline';
+import { AiOutlineHeart } from "react-icons/ai";
 import React from 'react'
 
 export default function TopNavbar() {
@@ -81,7 +83,7 @@ export default function TopNavbar() {
               <li><Link to="Friction" className="block px-4 py-2 hover:bg-gray-100">Fiction</Link></li>
               <li><Link to="/nonfriction" className="block px-4 py-2 hover:bg-gray-100">Non-Fiction</Link></li>
               <li><Link to="/Combo" className="block px-4 py-2 hover:bg-gray-100">Combos & Box Sets</Link></li>
-              <li><Link to="/category/blog" className="block px-4 py-2 hover:bg-gray-100">Blog</Link></li>
+              <li><Link to="/Blog" className="block px-4 py-2 hover:bg-gray-100">Blog</Link></li>
             </ul>
           </div>
         )}
@@ -92,7 +94,7 @@ export default function TopNavbar() {
         <Link to="/"><MagnifyingGlassIcon className="h-5 w-5 text-black" /></Link>
         <Link to="/signin"><ArrowRightOnRectangleIcon className="h-6 w-6" /></Link>
         <Link to="/Reg"><UserPlusIcon className="h-6 w-6" /></Link>
-        <Link to="/cart"><ShoppingCartIcon className="h-6 w-6 text-gray-800" /></Link>
+        <Link to="/Frontwishlist"><HeartIcon className="h-6 w-6 text-gray-800" /></Link>
       </div>
     </nav>
   );
